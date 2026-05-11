@@ -1,0 +1,61 @@
+@model AdTowns.Services.Email.MailKitEmailSender.RegistrationEmailModel
+<!DOCTYPE html>
+<html lang="en">
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px;">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td align="center">
+                <table width="600" border="0" cellspacing="0" cellpadding="0" style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
+                    <tr>
+                        <td style="background-color: #0078d4; padding: 20px; color: white;">
+                            <h2 style="margin: 0;">New AdTowns Registration</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 20px;">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="10" style="border-collapse: collapse;">
+                                <tr>
+                                    <th align="left" style="border-bottom: 1px solid #eee; color: #555; width:30%;">Reference ID</th>
+                                    <td style="border-bottom: 1px solid #eee; font-weight: bold;">@Model.ReferenceId</td>
+                                </tr>
+                                <tr>
+                                    <th align="left" style="border-bottom: 1px solid #eee; color: #555;">Type</th>
+                                    <td style="border-bottom: 1px solid #eee;">@Model.Type</td>
+                                </tr>
+                                <tr>
+                                    <th align="left" style="border-bottom: 1px solid #eee; color: #555;">Name</th>
+                                    <td style="border-bottom: 1px solid #eee;">@Model.Name</td>
+                                </tr>
+                                <tr>
+                                    <th align="left" style="border-bottom: 1px solid #eee; color: #555;">Business</th>
+                                    <td style="border-bottom: 1px solid #eee;">@Model.Business</td>
+                                </tr>
+                                <tr>
+                                    <th align="left" style="border-bottom: 1px solid #eee; color: #555;">Email</th>
+                                    <td style="border-bottom: 1px solid #eee;">@Model.Email</td>
+                                </tr>
+                                <tr>
+                                    <th align="left" style="border-bottom: 1px solid #eee; color: #555;">Phone</th>
+                                    <td style="border-bottom: 1px solid #eee;">@Model.Phone</td>
+                                </tr>
+                                <tr>
+                                    <th align="left" style="border-bottom: 1px solid #eee; color: #555;">City</th>
+                                    <td style="border-bottom: 1px solid #eee;">@Model.City</td>
+                                </tr>
+                                <tr>
+                                    <th align="left" style="border-bottom: 1px solid #eee; color: #555;">Message</th>
+                                    <td style="border-bottom: 1px solid #eee;">@Model.Message</td>
+                                </tr>
+                                <tr>
+                                    <th align="left" style="border-bottom: 1px solid #eee; color: #555;">Submitted At</th>
+                                    <td style="border-bottom: 1px solid #eee;">@Model.SubmittedAt.ToString("u")</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
